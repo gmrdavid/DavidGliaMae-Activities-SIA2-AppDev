@@ -4,6 +4,7 @@ Course & Section: BSIT 3A
 
 Subject Name: SIA 2 & APPLICATION DEVELOPMENT
 
+
 Description of the Repository:
 
 This repository contains all activities, projects, and source codes developed for the subject. It serves as a centralized collection of outputs that demonstrate the student’s understanding and application of the lessons discussed throughout the course. Each folder represents a specific activity or requirement, organized for easy navigation and review.
@@ -29,6 +30,7 @@ This activity involves creating a unique Candidacy Form using Laravel that demon
 Activity 5: Building and Integrating a Laravel Application with APIs (Mini Weather App) (url: http://127.0.0.1:8000/weather)
 
 This activity involves developing a Laravel-based Mini Weather App with user authentication, a simple REST API, and integration of a public API. Students will implement login and registration using Laravel Breeze, create their own API endpoint, and fetch external data (such as weather information) to display in a dashboard. The activity focuses on system integration, API usage, and building a functional web application with both internal and external data sources.
+
 
 
 LIST AND SHORT DESCRIPTION OF APPLICATION DEVELOPMENT ACTIVITIES
