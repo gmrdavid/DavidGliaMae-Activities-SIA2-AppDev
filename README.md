@@ -1,5 +1,7 @@
 Student Name: GLIA MAE RIO DAVID
+
 Course & Section: BSIT 3A
+
 Subject Name: SIA 2 & APPLICATION DEVELOPMENT
 
 Description of the Repository:
