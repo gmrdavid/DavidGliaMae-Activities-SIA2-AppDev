@@ -8,6 +8,7 @@ Description of the Repository:
 This repository contains all activities, projects, and source codes developed for the subject. It serves as a centralized collection of outputs that demonstrate the student’s understanding and application of the lessons discussed throughout the course. Each folder represents a specific activity or requirement, organized for easy navigation and review.
 
 LIST AND SHORT DESCRIPTION OF SIA 2 ACTIVITIES
+
 Activity 1: UML Final Project – Title & Design Proposal
 This activity focuses on presenting the project title, problem statement, objectives, target users, and system scope. It defines the overall concept of the Hulyanas Hill Information and Ordering System and serves as the foundation of the project, guiding the system design and development process.
 
@@ -25,5 +26,6 @@ This activity involves developing a Laravel-based Mini Weather App with user aut
 
 
 LIST AND SHORT DESCRIPTION OF APPLICATION DEVELOPMENT ACTIVITIES
+
 Activity 2: UML Diagram Design Project
 This activity involves designing the use case diagram for the Hulyanas Hill Information and Ordering System. It defines the system description, identifies the main actors (User and Admin), and outlines their key functions such as account management, ordering, cart handling, and system administration. The diagram visually represents how users interact with the system and how the admin manages products, orders, and user data using Draw.io.
