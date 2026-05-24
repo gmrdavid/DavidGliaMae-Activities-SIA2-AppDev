@@ -38,3 +38,10 @@ LIST AND SHORT DESCRIPTION OF APPLICATION DEVELOPMENT ACTIVITIES
 Activity 2: UML Diagram Design Project
 
 This activity involves designing the use case diagram for the Hulyanas Hill Information and Ordering System. It defines the system description, identifies the main actors (User and Admin), and outlines their key functions such as account management, ordering, cart handling, and system administration. The diagram visually represents how users interact with the system and how the admin manages products, orders, and user data using Draw.io.
+
+
+App Dev Final Project:
+
+Hulyanas Hill Information and Ordering System
+
+A web-based information and ordering system developed for Hulyanas Hill that allows customers to browse menus, place orders, and manage their transactions online. The system includes user authentication, cart management, order processing, and an admin dashboard for managing products and customer orders. Built using PHP, Laravel, Blade, and MySQL, the system provides a centralized and efficient platform for improving ordering operations and customer experience.
