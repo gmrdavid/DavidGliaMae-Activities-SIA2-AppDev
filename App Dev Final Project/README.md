@@ -1,271 +1,315 @@
-App Dev Final Project:
-
 Hulyanas Hill Information and Ordering System
 
 A beginner-friendly Laravel-based web application designed to modernize the ordering and information management processes of Hulyanas Hill. The system provides a convenient online ordering platform for customers and a centralized management system for administrators.
+________________________________________
 
-Project Overview
+1. Project Overview
 
-The Hulyanas Hill Information and Ordering System is a centralized web-based platform developed to improve customer ordering and administrative operations. The system allows customers to browse menu items, place online orders, monitor order status, view order history, and download invoices. Administrators are provided with tools to manage menu items, customer accounts, orders, sales reports, and business analytics through an integrated dashboard. The project replaces manual ordering and record-keeping processes with an organized digital platform that improves transaction accuracy, operational efficiency, and customer satisfaction.
+The Hulyanas Hill Information and Ordering System is a centralized web-based platform developed to improve customer ordering and administrative operations. The system allows customers to browse menu items, place online orders, monitor order status, view order history, and download invoices. Administrators are provided with tools to manage menu items, customer accounts, orders, sales reports, and business analytics through an integrated dashboard.
+The project replaces manual ordering and record-keeping processes with an organized digital platform that improves transaction accuracy, operational efficiency, and customer satisfaction.
+________________________________________
 
-Objectives 
-• Provide secure user authentication and role-based access.
+2. Objectives
+•	Provide secure user authentication and role-based access. 
 
-• Allow customers to browse menu items and place orders online.
+•	Allow customers to browse menu items and place orders online. 
 
-• Enable customers to manage their shopping cart and track their orders.
+•	Enable customers to manage their shopping cart and track their orders. 
 
-• Generate downloadable invoices for completed transactions.
+•	Generate downloadable invoices for completed transactions. 
 
-• Allow administrators to manage menu items, users, and customer orders.
+•	Allow administrators to manage menu items, users, and customer orders. 
 
-• Display business reports and sales analytics.
+•	Display business reports and sales analytics. 
 
-• Store all customer, product, order, and transaction data securely in a MySQL database.
+•	Store all customer, product, order, and transaction data securely in a MySQL database. 
 
-System Scope
+________________________________________
+
+3. System Scope
+
 Included
+•	User registration and authentication 
 
-• User registration and authentication
+•	Role-based access control 
 
-• Role-based access control
+•	Customer dashboard 
 
-• Customer dashboard
+•	Administrator dashboard 
 
-• Administrator dashboard
+•	Product/Menu management 
 
-• Product/Menu management
+•	Shopping cart management 
 
-• Shopping cart management
+•	Checkout and order processing 
 
-• Checkout and order processing
+•	Order tracking 
 
-• Order tracking
+•	Order history 
 
-• Order history
+•	Invoice generation 
 
-• Invoice generation
+•	User profile management 
 
-• User profile management
+•	Sales reports 
 
-• Sales reports
+•	Business analytics 
 
-• Business analytics
-
-• Database management using MySQL
+•	Database management using MySQL 
 
 Excluded / Future Enhancements
 
-• Mobile application
+•	Mobile application 
 
-• Online payment gateway integration
+•	Online payment gateway integration 
 
-• Real-time delivery tracking
+•	Real-time delivery tracking 
 
-• Inventory management
+•	Inventory management 
 
-• Multi-branch management
+•	Multi-branch management 
 
-• AI-based food recommendations
+•	AI-based food recommendations 
 
-• Third-party delivery integration
+•	Third-party delivery integration 
 
-User Roles and Permissions
-Role Main Permissions
+________________________________________
 
-Administrator Manage menu items, users, customer orders, reports, dashboard analytics, and system settings.
+4. User Roles and Permissions
 
-Customer Register, login, browse menu items, manage cart, place orders, track orders, download invoices, and update profile information.
+Role	Main Permissions
 
-Database Design
+Administrator	Manage menu items, users, customer orders, reports, dashboard analytics, and system 
+settings.
+
+Customer	Register, login, browse menu items, manage cart, place orders, track orders, download invoices, and update profile information.
+
+________________________________________
+
+5. Database Design
+
 Main Tables
 
 users
 
 Stores all registered user accounts.
 
-• id
+•	id 
 
-• name
+•	name 
 
-• email
+•	email 
 
-• email_verified_at
+•	email_verified_at 
 
-• password
+•	password 
 
-• remember_token
+•	remember_token 
 
-• role
+•	role 
 
-• is_active
+•	is_active 
 
-• address
+•	address 
 
-• phone
+•	phone 
 
-• created_at
+•	created_at 
 
-• updated_at
+•	updated_at 
+
+________________________________________
 
 products
 
 Stores all available menu items.
 
-• id
+•	id 
 
-• name
+•	name 
 
-• description
+•	description 
 
-• price
+•	price 
 
-• category
+•	category 
 
-• image
+•	image 
 
-• is_active
+•	is_active 
 
-• created_at
+•	created_at 
 
-• updated_at
+•	updated_at 
+
+________________________________________
 
 carts
 
 Stores temporary customer shopping cart data.
 
-• id
+•	id 
 
-• user_id
+•	user_id 
 
-• product_id
+•	product_id 
 
-• quantity
+•	quantity 
 
-• created_at
+•	created_at 
 
-• updated_at
+•	updated_at 
+
+________________________________________
 
 orders
 
 Stores completed customer transactions.
 
-• id
+•	id 
 
-• user_id
+•	user_id 
 
-• order_number
+•	order_number 
 
-• total_amount
+•	total_amount 
 
-• status
+•	status 
 
-• payment_method
+•	payment_method 
 
-• shipping_address
+•	shipping_address 
 
-• phone
+•	phone 
 
-• created_at
+•	created_at 
 
-• updated_at
+•	updated_at 
+
+________________________________________
 
 order_items
 
 Stores the detailed breakdown of each order.
 
-• id
+•	id 
 
-• order_id
+•	order_id 
 
-• product_id
+•	product_id 
 
-• product_name
+•	product_name 
 
-• price
+•	price 
 
-• quantity
+•	quantity 
 
-• subtotal
+•	subtotal 
 
-• created_at
+•	created_at 
 
-• updated_at
+•	updated_at 
 
-Table Relationships
-• User hasMany Cart
+________________________________________
 
-• User hasMany Order • Product hasMany Cart
+6. Table Relationships
 
-• Product hasMany OrderItem
+•	User hasMany Cart 
 
-• Cart belongsTo User
+•	User hasMany Order 
 
-• Cart belongsTo Product
+•	Product hasMany Cart 
 
-• Order belongsTo User
+•	Product hasMany OrderItem 
 
-• Order hasMany OrderItem
+•	Cart belongsTo User 
 
-• OrderItem belongsTo Order
+•	Cart belongsTo Product 
 
-• OrderItem belongsTo Product
+•	Order belongsTo User 
 
-Technologies Used
+•	Order hasMany OrderItem 
+
+•	OrderItem belongsTo Order 
+
+•	OrderItem belongsTo Product 
+
+________________________________________
+
+7. Technologies Used
+
 Programming Languages
 
-• PHP
+•	PHP 
 
-• HTML5 • CSS3
+•	HTML5 
 
-• JavaScript
+•	CSS3 
+
+•	JavaScript 
+
 
 Framework
 
-• Laravel 12
+•	Laravel 12 
+
 
 Frontend
 
-• Blade Template Engine
+•	Blade Template Engine 
 
-• Bootstrap / Tailwind CSS
+•	Bootstrap / Tailwind CSS 
 
 Database
 
-• MySQL Development Tools
 
-• Visual Studio Code
+•	MySQL 
 
-• XAMPP
 
-• Composer
+Development Tools
 
-• Git & GitHub
+•	Visual Studio Code 
 
-Installation Guide
+•	XAMPP 
+
+•	Composer 
+
+•	Git & GitHub 
+
+
+________________________________________
+
+8. Installation Guide
+
 Requirements
 
-• PHP 8.2 or higher
+•	PHP 8.2 or higher 
 
-• Composer
+•	Composer 
 
-• MySQL or MariaDB
+•	MySQL or MariaDB 
 
-• XAMPP (or equivalent local server)
+•	XAMPP (or equivalent local server) 
 
-• Laravel 12 compatible environment
+•	Laravel 12 compatible environment 
+
+________________________________________
 
 Step 1: Clone the Repository
 
-git clone https://github.com/gmrdavid/DavidGliaMae-Activities-SIA2-AppDev.git
+git clone https://github.com/yourusername/hulyanas-hill-ordering-system.git
 
 Or extract the ZIP file into:
 
-C:\Users\gliam\DavidGliaMae-Activities-SIA2-AppDev
+C:\xampp\htdocs\hulyanas-hill-ordering-system
+
+________________________________________
 
 Step 2: Install Dependencies
 
 composer install
+
+________________________________________
 
 Step 3: Create Environment File
 
@@ -274,6 +318,8 @@ cp .env.example .env
 For Windows:
 
 copy .env.example .env
+
+________________________________________
 
 Step 4: Configure Database
 
@@ -289,9 +335,13 @@ DB_USERNAME=root
 
 DB_PASSWORD=
 
+________________________________________
+
 Step 5: Generate Application Key
 
 php artisan key:generate
+
+________________________________________
 
 Step 6: Run Database Migration
 
@@ -301,9 +351,13 @@ If seeders are available:
 
 php artisan migrate:fresh --seed
 
+________________________________________
+
 Step 7: Create Storage Link
 
 php artisan storage:link
+
+________________________________________
 
 Step 8: Start the Development Server
 
@@ -313,122 +367,147 @@ Visit:
 
 http://127.0.0.1:8000
 
-Main System Flow
+________________________________________
+
+9. Main System Flow
+
 Customer Flow
 
-Register or login.
+1.	Register or login. 
 
-Browse available menu items.
+2.	Browse available menu items. 
 
-Add products to the shopping cart.
+3.	Add products to the shopping cart. 
 
-Review cart contents.
+4.	Review cart contents. 
 
-Proceed to checkout.
+5.	Proceed to checkout. 
 
-Submit order.
+6.	Submit order. 
 
-System records the order.
+7.	System records the order. 
 
-Customer tracks order status.
+8.	Customer tracks order status. 
 
-Customer downloads invoice after completion.
+9.	Customer downloads invoice after completion. 
+
+________________________________________
 
 Administrator Flow
 
-Login.
+1.	Login. 
 
-Access the admin dashboard.
+2.	Access the admin dashboard. 
 
-Manage menu items.
+3.	Manage menu items. 
 
-Manage customer accounts.
+4.	Manage customer accounts. 
 
-Monitor incoming orders.
+5.	Monitor incoming orders. 
 
-Update order status.
+6.	Update order status. 
 
-View reports and analytics.
+7.	View reports and analytics. 
 
-Order Processing Logic
+________________________________________
+
+10. Order Processing Logic
+
 The ordering process follows these steps:
 
-Customer selects products.
+1.	Customer selects products. 
 
-Products are stored in the cart.
+2.	Products are stored in the cart. 
 
-Customer proceeds to checkout.
+3.	Customer proceeds to checkout. 
 
-The system calculates:
+4.	The system calculates: 
 
 Subtotal = Price × Quantity
 
+
+
 Total Amount = Sum of all Subtotals
 
-Order is saved in the orders table.
+5.	Order is saved in the orders table. 
 
-Individual purchased products are saved in the order_items table.
+6.	Individual purchased products are saved in the order_items table. 
 
-Customer can monitor the order status.
+7.	Customer can monitor the order status. 
 
-Report Generation
+________________________________________
+
+11. Report Generation
+
 The administrator dashboard provides reports including:
 
-• Total Revenue
+•	Total Revenue 
 
-• Total Orders
+•	Total Orders 
 
-• Total Customers
+•	Total Customers 
 
-• Average Order Value
+•	Average Order Value 
+•	Best Selling Products 
 
-• Best Selling Products
+•	Sales by Category 
 
-• Sales by Category
-
-• Daily Revenue Graph
+•	Daily Revenue Graph 
 
 These reports help monitor business performance and support decision-making.
 
-Testing Instructions
+________________________________________
+
+12. Testing Instructions
+
 After installation:
 
-Register a customer account.
+1.	Register a customer account. 
 
-Login as customer.
+2.	Login as customer. 
 
-Browse products.
+3.	Browse products. 
 
-Add items to cart.
+4.	Add items to cart. 
 
-Checkout.
+5.	Checkout. 
 
-Verify the order is created.
+6.	Verify the order is created. 
 
-Login as administrator.
+7.	Login as administrator. 
 
-Manage products.
+8.	Manage products. 
 
-View customer orders.
+9.	View customer orders. 
 
-Update order status.
+10.	Update order status. 
 
-Verify reports and analytics.
+11.	Verify reports and analytics. 
 
-Project Structure
+
+________________________________________
+
+13. Project Structure
+
 app/
 
 │── Http/
 
-│ ├── Controllers/
+│   ├── Controllers/
 
-│ ├── Middleware/
+│   ├── Middleware/
 
 │── Models/
 
+
+
 bootstrap/
 
+
+
 config/
+
+
 
 database/
 
@@ -436,52 +515,75 @@ database/
 
 │── seeders/
 
+
+
 public/
+
+
 
 resources/
 
 │── views/
 
+
+
 routes/
 
 │── web.php
 
+
+
 storage/
+
+
 
 tests/
 
+
+
 vendor/
 
-Future Enhancements
+________________________________________
+
+14. Future Enhancements
+
 Planned improvements include:
 
-• GCash integration
+•	GCash integration 
 
-• PayMaya integration
+•	PayMaya integration 
 
-• PayPal support
+•	PayPal support 
 
-• Credit/Debit Card payments
+•	Credit/Debit Card payments 
 
-• Mobile application
+•	Mobile application 
 
-• REST API development
+•	REST API development 
 
-• Inventory management
+•	Inventory management 
 
-• Delivery tracking
+•	Delivery tracking 
 
-• AI product recommendations
+•	AI product recommendations 
 
-• Cloud deployment
+•	Cloud deployment 
 
-• Multi-branch management
+•	Multi-branch management 
 
-Notes
-• This project is developed using the Laravel Framework.
+________________________________________
 
-• The vendor directory is not included in the repository. Run composer install after cloning or extracting the project.
+15. Notes
 
-• Configure the .env file before running the application.
+•	This project is developed using the Laravel Framework. 
 
-• Ensure that Apache, MySQL, and PHP services are running properly before starting the Laravel development server. • The project is intended for educational purposes and serves as a web-based ordering and management system for Hulyanas Hill.
+•	The vendor directory is not included in the repository. Run composer install after cloning or 
+extracting the project. 
+
+•	Configure the .env file before running the application. 
+
+•	Ensure that Apache, MySQL, and PHP services are running properly before starting the Laravel 
+development server. 
+
+•	The project is intended for educational purposes and serves as a web-based ordering and management 
+system for Hulyanas Hill.
