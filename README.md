@@ -51,7 +51,9 @@ The project replaces manual ordering and record-keeping processes with an organi
 ________________________________________
 2. Objectives
 •	Provide secure user authentication and role-based access. 
+
 •	Allow customers to browse menu items and place orders online. 
+
 •	Enable customers to manage their shopping cart and track their orders. 
 •	Generate downloadable invoices for completed transactions. 
 •	Allow administrators to manage menu items, users, and customer orders. 
