@@ -5,9 +5,12 @@ Hulyanas Hill Information and Ordering System
 A beginner-friendly Laravel-based web application designed to modernize the ordering and information management processes of Hulyanas Hill. The system provides a convenient online ordering platform for customers and a centralized management system for administrators.
 
 Project Overview
+
 The Hulyanas Hill Information and Ordering System is a centralized web-based platform developed to improve customer ordering and administrative operations. The system allows customers to browse menu items, place online orders, monitor order status, view order history, and download invoices. Administrators are provided with tools to manage menu items, customer accounts, orders, sales reports, and business analytics through an integrated dashboard. The project replaces manual ordering and record-keeping processes with an organized digital platform that improves transaction accuracy, operational efficiency, and customer satisfaction.
 
-Objectives • Provide secure user authentication and role-based access.
+Objectives 
+• Provide secure user authentication and role-based access.
+
 • Allow customers to browse menu items and place orders online.
 
 • Enable customers to manage their shopping cart and track their orders.
