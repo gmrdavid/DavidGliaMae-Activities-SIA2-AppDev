@@ -334,11 +334,11 @@ ________________________________________
 
 Step 1: Clone the Repository
 
-git clone https://github.com/yourusername/hulyanas-hill-ordering-system.git
+git clone https://github.com/gmrdavid/DavidGliaMae-Activities-SIA2-AppDev.git
 
 Or extract the ZIP file into:
 
-C:\xampp\htdocs\hulyanas-hill-ordering-system
+C:\Users\gliam\DavidGliaMae-Activities-SIA2-AppDev
 
 ________________________________________
 
