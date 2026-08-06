@@ -99,6 +99,7 @@ Included
 •	Database management using MySQL
 
 
+
 Excluded / Future Enhancements
 
 •	Mobile application 
@@ -287,15 +288,18 @@ Programming Languages
 
 •	JavaScript 
 
+
 Framework
 
 •	Laravel 12 
+
 
 Frontend
 
 •	Blade Template Engine 
 
 •	Bootstrap / Tailwind CSS 
+
 
 Database
 
