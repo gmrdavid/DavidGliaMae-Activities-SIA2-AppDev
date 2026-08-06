@@ -1,3 +1,5 @@
+App Dev Final Project:
+
 Hulyanas Hill Information and Ordering System
 
 A beginner-friendly Laravel-based web application designed to modernize the ordering and information management processes of Hulyanas Hill. The system provides a convenient online ordering platform for customers and a centralized management system for administrators.
@@ -10,6 +12,7 @@ The project replaces manual ordering and record-keeping processes with an organi
 ________________________________________
 
 2. Objectives
+
 •	Provide secure user authentication and role-based access. 
 
 •	Allow customers to browse menu items and place orders online. 
@@ -297,11 +300,11 @@ ________________________________________
 
 Step 1: Clone the Repository
 
-git clone https://github.com/yourusername/hulyanas-hill-ordering-system.git
+git clone https://github.com/gmrdavid/DavidGliaMae-Activities-SIA2-AppDev.git
 
 Or extract the ZIP file into:
 
-C:\xampp\htdocs\hulyanas-hill-ordering-system
+C:\Users\gliam\DavidGliaMae-Activities-SIA2-AppDev
 
 ________________________________________
 
